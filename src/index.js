@@ -5,4 +5,8 @@ import emoji from './assets/emoji.png';
 const emojiImg = document.getElementById('emojiImg');
 emojiImg.src = emoji;
 
-console.log(generateJoke());
+const jokeBtn = document.getElementById('jokeBtn');
+
+jokeBtn.addEventListener('click', generateJoke);
+
+generateJoke();
